@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Portfolio Design System - Exact color palette from reference */
+
+@layer base {
+
+  :root {
+    /* Core Portfolio Colors - Converted to HEX */
+    --portfolio-white: #ffffff;
+    /* hsl(0 0% 100%) */
+    --portfolio-cream: #fbf5ed;
+    /* hsl(34 23% 96%) */
+    --portfolio-light-gray: #f0f2f4;
+    /* hsl(210 8% 94%) */
+    --portfolio-warm-beige: #ddccc2;
+    /* hsl(25 20% 82%) */
+    --portfolio-dark-gray: #3b3635;
+    /* hsl(24 8% 23%) */
+    --portfolio-black: #000000;
+    /* hsl(0 0% 0%) */
+
+    /* --portfolio-bg: #dbc2a6;
+    --portfolio-card: #be996c;
+    --portfolio-dark-card: #414a37; */
+    /* try 1 */
+    /* --portfolio-bg: #dbc2a6;
+    --portfolio-card: #dbc2a6;
+    --portfolio-dark-card: #414a37;
+    --background: #be996c; */
+
+    /* aqua marine */
+    /* --portfolio-bg: #B8D8D8;
+    --portfolio-card: #B8D8D8;
+    --portfolio-dark-card: #4F6367;
+    --background: #7A9E9F; */
+
+    /* silent night */
+    /* --portfolio-bg: #FFFFFC;
+    --portfolio-card: #BEB7A4;
+    --portfolio-dark-card: #000000;
+    --background: #FFFFFC; */
+
+    /* sunset flamenco dance */
+    /* --portfolio-bg: #F4F1DE;
+    --portfolio-card: #E07A5F;
+    --portfolio-dark-card: #3D405B;
+    --background: #F4F1DE; */
+
+    /* lemon zest delight */
+    /* --portfolio-bg: #FEFAE0;
+    --portfolio-card: #FEFAE0;
+    --portfolio-dark-card: #283618;
+    --background: #606C38; */
+
+    /* moonlit ocean */
+    /* --portfolio-bg: #EDF2F4;
+    --portfolio-card: #8D99AE;
+    --portfolio-dark-card: #2B2D42;
+    --background: #EDF2F4; */
+
+    /* light still */
+    --portfolio-bg: #f8f9fa;
+    --portfolio-card: #dee2e6;
+    --portfolio-dark-card: #212529;
+    --background: #f8f9fa;
+
+    /* Text Colors */
+    --portfolio-text-light: #fdf6ea;
+    /* hsl(36 50% 96%) */
+    --portfolio-text-beige: #d6c9bb;
+    /* hsl(25 20% 82%) */
+    --portfolio-blue-primary: #006dff;
+    /* hsl(220 100% 54%) */
+    --portfolio-blue-secondary: #0060e6;
+    /* hsl(218 88% 50%) */
+    --portfolio-blue-link: #0000f5;
+    /* hsl(240 100% 47%) */
+    --portfolio-purple-visited: #4c2671;
+    /* hsl(271 60% 33%) */
+    --portfolio-text-dark-blue: #22323d;
+    /* hsl(206 29% 18%) */
+    --portfolio-text-black: #000000;
+    /* hsl(0 0% 0%) */
+
+    /* Background System */
+    /* --background: #dbc2a6; */
+
+    --foreground: #000000;
+    --hero-background: #fbf5ed;
+    --section-dark: #000000;
+    --section-light: #d6c9bb;
+
+    /* Component Colors */
+    --card: #ffffff;
+    --card-foreground: #000000;
+    --border: #d6c9bb;
+    --input: #f0f2f4;
+    --ring: #006dff;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: #fafafa;
+    /* hsl(0 0% 98%) */
+    --sidebar-foreground: #403f42;
+    /* hsl(240 5.3% 26.1%) */
+    --sidebar-primary: #1a1a1a;
+    /* hsl(240 5.9% 10%) */
+    --sidebar-primary-foreground: #fafafa;
+    /* hsl(0 0% 98%) */
+    --sidebar-accent: #f4f4f7;
+    /* hsl(240 4.8% 95.9%) */
+    --sidebar-accent-foreground: #1a1a1a;
+    /* hsl(240 5.9% 10%) */
+    --sidebar-border: #e5e9ef;
+    /* hsl(220 13% 91%) */
+    --sidebar-ring: #2a8cff;
+    /* hsl(217.2 91.2% 59.8%) */
+  }
+
+  .dark {
+    --background: #070a0f;
+    /* hsl(222.2 84% 4.9%) */
+    --foreground: #f6f9fc;
+    /* hsl(210 40% 98%) */
+
+    --card: #070a0f;
+    /* hsl(222.2 84% 4.9%) */
+    --card-foreground: #f6f9fc;
+    /* hsl(210 40% 98%) */
+
+    --popover: #070a0f;
+    /* hsl(222.2 84% 4.9%) */
+    --popover-foreground: #f6f9fc;
+    /* hsl(210 40% 98%) */
+
+    --primary: #f6f9fc;
+    /* hsl(210 40% 98%) */
+    --primary-foreground: #1d232e;
+    /* hsl(222.2 47.4% 11.2%) */
+
+    --secondary: #202733;
+    /* hsl(217.2 32.6% 17.5%) */
+    --secondary-foreground: #f6f9fc;
+    /* hsl(210 40% 98%) */
+
+    --muted: #202733;
+    /* hsl(217.2 32.6% 17.5%) */
+    --muted-foreground: #97a6b6;
+    /* hsl(215 20.2% 65.1%) */
+
+    --accent: #202733;
+    /* hsl(217.2 32.6% 17.5%) */
+    --accent-foreground: #f6f9fc;
+    /* hsl(210 40% 98%) */
+
+    --destructive: #982d2d;
+    /* hsl(0 62.8% 30.6%) */
+    --destructive-foreground: #f6f9fc;
+    /* hsl(210 40% 98%) */
+
+    --border: #202733;
+    /* hsl(217.2 32.6% 17.5%) */
+    --input: #202733;
+    /* hsl(217.2 32.6% 17.5%) */
+    --ring: #c0d0ea;
+    /* hsl(212.7 26.8% 83.9%) */
+
+    --sidebar-background: #1a1a1a;
+    /* hsl(240 5.9% 10%) */
+    --sidebar-foreground: #f4f4f7;
+    /* hsl(240 4.8% 95.9%) */
+    --sidebar-primary: #2f65ff;
+    /* hsl(224.3 76.3% 48%) */
+    --sidebar-primary-foreground: #ffffff;
+    /* hsl(0 0% 100%) */
+    --sidebar-accent: #29292e;
+    /* hsl(240 3.7% 15.9%) */
+    --sidebar-accent-foreground: #f4f4f7;
+    /* hsl(240 4.8% 95.9%) */
+    --sidebar-border: #29292e;
+    /* hsl(240 3.7% 15.9%) */
+    --sidebar-ring: #2a8cff;
+    /* hsl(217.2 91.2% 59.8%) */
+  }
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    scroll-behavior: smooth;
+  }
+
+  /* NEW: Headings => Questrial via font-heading */
+  h1,
+  h2,
+  div,
+  p,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+
+  /* NEW: Body text elements => Helvetica via font-body */
+
+  a,
+  li,
+  small,
+  span,
+  label,
+  input,
+  textarea,
+  button {
+    @apply font-body;
+  }
+}
+
+@layer components {
+
+  /* Portfolio Typography */
+  .portfolio-heading {
+    @apply text-2xl md:text-4xl font-bold text-white;
+  }
+
+  .portfolio-subheading {
+    @apply text-lg md:text-xl font-medium;
+  }
+
+  .portfolio-body {
+    @apply text-sm md:text-base leading-relaxed;
+  }
+
+  /* Portfolio Sections */
+  .portfolio-section-dark {
+    @apply bg-[var(--section-dark)] text-[var(--portfolio-text-light)];
+  }
+
+  .portfolio-section-light {
+    @apply bg-[var(--section-light)] text-[var(--portfolio-text-black)];
+  }
+
+  .portfolio-hero {
+    @apply bg-[var(--hero-background)] text-[var(--portfolio-text-black)];
+  }
+
+  /* Portfolio Cards */
+  .portfolio-card {
+    @apply bg-[var(--portfolio-white)] rounded-lg p-6 shadow-sm border border-[var(--border)];
+  }
+
+  .portfolio-skill-card {
+    @apply bg-[var(--portfolio-white)] rounded-lg p-4 text-center shadow-sm border border-[var(--border)] hover:shadow-md transition-shadow;
+  }
+
+  /* Portfolio Buttons */
+  .portfolio-btn-primary {
+    @apply bg-[var(--portfolio-blue-primary)] text-white px-6 py-3 rounded-lg hover:bg-[var(--portfolio-blue-secondary)] transition-colors;
+  }
+
+  .portfolio-btn-outline {
+    @apply border-2 border-[var(--portfolio-text-black)] text-[var(--portfolio-text-black)] px-6 py-3 rounded-lg hover:bg-[var(--portfolio-text-black)] hover:text-white transition-colors;
+  }
+
+  /* Scroll Animations */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(60px);
+    filter: blur(10px);
+    /* Start with blur */
+    transition: opacity 1s ease-out, transform 1s ease-out, filter 1s ease-out;
+  }
+
+  .fade-in-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+    /* Remove blur */
+  }
+
+
+  .fade-in {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+  }
+
+  .fade-in.in-view {
+    opacity: 1;
+  }
+
+  .scale-in {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .scale-in.in-view {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* Experience Section Divider Animation */
+  .experience-divider {
+    height: 0.5px;
+    background: var(--portfolio-dark-card);
+    margin: 2rem 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1.5s ease-out;
+  }
+
+  .experience-divider.in-view {
+    transform: scaleX(1);
+  }
+
+
+  .footer-divider {
+    height: 1px;
+    background: var(--portfolio-bg);
+    margin: 2rem 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1.5s ease-out;
+  }
+
+  .footer-divider.in-view {
+    transform: scaleX(1);
+  }
+
+  /* Responsive Section Margins */
+  .section-responsive {
+    margin: 5px 0;
+    /* top/bottom 20px, left/right 0 */
+  }
+
+  .name-card-padding {
+    padding: 60px 40px;
+  }
+
+  .card-padding {
+    padding: 40px;
+  }
+
+  .navbar-padding {
+    padding: 0px 40px 0px 40px;
+  }
+
+  @media (min-width: 1024px) {
+    .section-responsive {
+      margin: 20px;
+      /* all sides 20px on desktops */
+    }
+
+    .name-card-padding {
+      padding: 60px;
+      padding-bottom: 100px;
+    }
+
+    .card-padding {
+      padding: 60px;
+    }
+
+    .navbar-padding {
+      padding: 30px 40px 30px 40px;
+    }
+
+  }
+
+  /* Navigation */
+  .nav-link {
+    @apply text-[var(--portfolio-text-light)] hover:text-[var(--portfolio-blue-primary)] transition-colors;
+  }
+
+  /* Mobile Menu */
+  .mobile-menu {
+    @apply fixed inset-0 bg-[var(--portfolio-dark-card)] z-50 flex flex-col items-center justify-center space-y-8;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+  }
+
+  .mobile-menu.open {
+    transform: translateX(0);
+  }
+}
