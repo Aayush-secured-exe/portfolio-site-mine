@@ -235,9 +235,9 @@
   }
   
   .toast-dark {
-    background-color: var(--portfolio-dark-card);
+    background-color: var(--portfolio-bg);
     border-color: var(--portfolio-card);
-    color: #f8f9fa;
+    color: var(--portfolio-card);
   }
 
   /* Portfolio Typography */
