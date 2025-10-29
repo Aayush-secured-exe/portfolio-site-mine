@@ -27,11 +27,8 @@ const toastVariants = cva(
   {
     variants: {
       variant: {
-        default: "border bg-portfolio-card text-gray-900 border-gray-400",
-        // Using #dee2e6 background with dark text
-        
-        destructive: "border-red-500 bg-portfolio-dark text-white border-red-600",
-        // Usi
+        default: "bg-[#f8f9fa] text-[#212529] border-[#212529]",
+        destructive: "bg-red-500 text-white border-red-600",
       },
     },
     defaultVariants: {
