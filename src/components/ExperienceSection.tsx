@@ -76,7 +76,7 @@ const ExperienceSection = () => {
       company: 'Group Project',
       role: 'Attendance System with Face Recognition',
       period: 'Summer 2025',
-      link: 'https://github.com/yourusername/attendance-system', // Add your project links
+      link: 'https://github.com/yourusname/attendance-system', // Add your project links
       responsibilities: [
         'Built a real-time attendance system using Python, OpenCV, and MySQL',
         'Implemented face recognition for automated student attendance tracking',
