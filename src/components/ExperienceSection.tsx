@@ -65,7 +65,7 @@ const ExperienceSection = () => {
       company: 'Personal Project',
       role: 'Blood Donation Portal',
       period: 'Summer 2025',
-      link: 'https://github.com/yourusername/blood-donation-portal', // Add your project link
+      link: 'https://github.com/Aayush-secured-exe/BloodDonationProject', // Add your project link
       responsibilities: [
         'Developed a donor management system using Java Servlets, JSP, and MySQL',
         'Implemented secure login/signup with bcrypt and added light/dark theme toggle',
