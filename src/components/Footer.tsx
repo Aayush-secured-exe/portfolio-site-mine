@@ -47,6 +47,7 @@ const Footer = () => {
                   <a
                     key={index}
                     href={social.href}
+                    target="_blank"
                     className="text-[var(--portfolio-bg)] hover:text-[#6c757d] transition-colors"
                     aria-label={social.label}
                   >
