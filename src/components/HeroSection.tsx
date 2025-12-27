@@ -93,6 +93,7 @@ export default function HeroSection() {
                   <a
                     key={index}
                     href={item.href}
+                    target='_blank'
                     className="bg-[var(--portfolio-card)] card-padding rounded-2xl flex items-center space-x-2 hover:opacity-80 transition-opacity"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
