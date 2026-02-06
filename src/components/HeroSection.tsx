@@ -52,7 +52,7 @@ export default function HeroSection() {
       <Helmet>
         <link rel="preload" as="image" href={heroImage} fetchPriority="high" />
       </Helmet>
-      <section className="flex section-responsive md:my-4 rounded-2xl">
+      <section className="flex section-responsive md:my-4 rounded-3xl">
         <div className="grid md:grid-cols-2 gap-[5px] md:gap-4 md:items-stretch w-full">
           {/* Right Column - Profile Image (first on mobile) */}
           <div className="order-1 md:order-2 md:h-full">
@@ -62,7 +62,7 @@ export default function HeroSection() {
                 alt="Aayush Shaw - Professional Portrait"
                 // Enforce exact match on md+; mobile falls back to class height
                 style={imgHeight ? { height: `${imgHeight}px` } : undefined}
-                className="w-full h-[450px] md:h-auto object-cover object-top rounded-2xl shadow-lg"
+                className="w-full h-[450px] md:h-auto object-cover object-top rounded-3xl shadow-lg"
               />
             </div>
           </div>
@@ -72,13 +72,13 @@ export default function HeroSection() {
             ref={leftRef}
             className="order-2 md:order-1 md:h-full space-y-[5px] sm:space-y-[5px] md:space-y-[20px] lg:space-y-[20px]"
           >
-            <div className="bg-[var(--portfolio-dark-card)] text-[var(--portfolio-bg)] name-card-padding md:p-12 md:pb-20 rounded-2xl">
+            <div className="bg-[var(--portfolio-dark-card)] text-[var(--portfolio-bg)] name-card-padding md:p-12 md:pb-20 rounded-3xl">
               <h1 className="fade-in-up text-4xl md:text-6xl lg:text-7xl leading-tight">
                 Aayush <br className="hidden md:block" /> Shaw
               </h1>
             </div>
 
-            <div className="bg-[var(--portfolio-card)] card-padding lg:px-12 lg:py-14 rounded-2xl">
+            <div className="bg-[var(--portfolio-card)] card-padding lg:px-12 lg:py-14 rounded-3xl">
               <p className="fade-in-up text-md md:text-lg lg:text-xl font-medium text-[var(--portfolio-dark-card)]">
                 Aspiring Software Developer
                 <br />
@@ -94,7 +94,7 @@ export default function HeroSection() {
                     key={index}
                     href={item.href}
                     target='_blank'
-                    className="bg-[var(--portfolio-card)] card-padding rounded-2xl flex items-center space-x-2 hover:opacity-80 transition-opacity"
+                    className="bg-[var(--portfolio-card)] card-padding rounded-3xl flex items-center space-x-2 hover:opacity-80 transition-opacity"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <Icon className="fade-in-up w-4 h-4 text-[var(--portfolio-dark-card)] shrink-0" />

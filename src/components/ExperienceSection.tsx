@@ -98,7 +98,7 @@ const ExperienceSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[5px] md:gap-4 md:items-stretch">
           {/* Left column */}
           <div ref={leftRef} className="order-2 md:order-1 space-y-[5px] sm:space-y-[5px] md:space-y-[20px] lg:space-y-[20px] md:h-full">
-            <div className="bg-[var(--portfolio-dark-card)] py-12 rounded-2xl">
+            <div className="bg-[var(--portfolio-dark-card)] py-12 rounded-3xl">
               <div className="fade-in-up">
                 <h2 className="text-4xl lg:text-5xl leading-[1] text-[var(--portfolio-bg)] px-8 lg:px-12">
                   Projects
@@ -106,7 +106,7 @@ const ExperienceSection = () => {
               </div>
             </div>
 
-            <div className="rounded-2xl bg-[var(--portfolio-card)] md:pr-[2px] card-padding lg:px-12 lg:py-14">
+            <div className="rounded-3xl bg-[var(--portfolio-card)] md:pr-[2px] card-padding lg:px-12 lg:py-14">
               <div className="space-y-8">
                 {experiences.map((exp, index) => (
                   <div key={index}>
@@ -154,7 +154,7 @@ const ExperienceSection = () => {
                 src={experienceImage}
                 alt="Professional working environment"
                 style={imgHeight ? { height: `${imgHeight}px` } : undefined}
-                className="w-full h-[450px] md:h-auto object-cover object-right rounded-2xl shadow-lg"
+                className="w-full h-[450px] md:h-auto object-cover object-right rounded-3xl shadow-lg"
               />
             </div>
           </div>

@@ -1,5 +1,5 @@
 const AboutSection = () => {
-  return <section id="about" className="md:py-20 p-8 md:my-4 bg-[var(--portfolio-card)] rounded-2xl section-responsive">
+  return <section id="about" className="md:py-20 p-8 md:my-4 bg-[var(--portfolio-card)] rounded-3xl section-responsive">
       <div className="w-full sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="fade-in-up">

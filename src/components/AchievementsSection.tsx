@@ -25,7 +25,7 @@ const AchievementsSection = () => {
   return (
     <>
       {/* [var(--portfolio-dark-card)] Header Section */}
-      <section className="bg-[var(--portfolio-dark-card)] py-12 md:my-4 section-responsive rounded-2xl">
+      <section className="bg-[var(--portfolio-dark-card)] py-12 md:my-4 section-responsive rounded-3xl">
         <div className="w-full">
           <div className="fade-in-up">
             <h2 className="text-4xl lg:text-5xl leading-[1] text-[var(--portfolio-bg)] px-8 lg:px-12">Milestones</h2>
@@ -40,7 +40,7 @@ const AchievementsSection = () => {
             {achievements.map((achievement, index) => (
               <div
                 key={index}
-                className="bg-[var(--portfolio-card)] rounded-2xl card-padding lg:px-12 lg:py-14"
+                className="bg-[var(--portfolio-card)] rounded-3xl card-padding lg:px-12 lg:py-14"
               >
                 <h3
                   className="fade-in-up text-3xl leading-[1] md:text-2xl text-[var(--portfolio-dark-card)]"

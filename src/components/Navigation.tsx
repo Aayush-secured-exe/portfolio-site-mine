@@ -27,7 +27,7 @@ const Navigation = () => {
     setIsMenuOpen(false);
   };
   return <>
-      <nav className="my-[8px] md:my-4 lg:m-4 z-50 bg-[var(--portfolio-dark-card)] rounded-2xl h-auto md:h-16">
+      <nav className="my-[8px] md:my-4 lg:m-4 z-50 bg-[var(--portfolio-dark-card)] rounded-3xl h-auto md:h-16">
         <div className="flex items-center justify-between h-full px-8 py-[30px] md:px-8 md:py-0">
           <div className="fade-in-up text-xl text-[var(--portfolio-bg)]">
             Aayush Shaw

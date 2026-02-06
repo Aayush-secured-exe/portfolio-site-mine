@@ -42,7 +42,7 @@ const EducationSection = () => {
   return (
     <>
       {/* [var(--portfolio-dark-card)] Header Section */}
-      <section className="bg-[var(--portfolio-dark-card)] py-12 md:my-4 section-responsive rounded-2xl">
+      <section className="bg-[var(--portfolio-dark-card)] py-12 md:my-4 section-responsive rounded-3xl">
         <div className="w-full">
           <div className="fade-in-up">
             <h2 className="text-4xl lg:text-5xl leading-[1] text-[var(--portfolio-bg)] px-8 lg:px-12">Education & Certifications</h2>
@@ -55,7 +55,7 @@ const EducationSection = () => {
         <div className="w-full">
           <div className="grid md:grid-cols-2 gap-[5px] md:gap-5">
             {/* Education Column */}
-            <div className="bg-[var(--portfolio-card)] card-padding lg:px-12 lg:py-14 rounded-2xl">
+            <div className="bg-[var(--portfolio-card)] card-padding lg:px-12 lg:py-14 rounded-3xl">
               <h3 className="text-3xl leading-[1] fade-in-up md:text-2xl text-[var(--portfolio-dark-card)] mb-8">Education</h3>
               {education.map((edu, index) => (
                 <div
@@ -80,7 +80,7 @@ const EducationSection = () => {
             </div>
 
             {/* Internships Column */}
-            <div className="bg-[var(--portfolio-card)] card-padding lg:px-12 lg:py-14 rounded-2xl">
+            <div className="bg-[var(--portfolio-card)] card-padding lg:px-12 lg:py-14 rounded-3xl">
               <h3 className="text-3xl leading-[1] fade-in-up md:text-2xl text-[var(--portfolio-dark-card)] mb-8">Internships</h3>
               {internships.map((internship, index) => (
                 <div
@@ -104,7 +104,7 @@ const EducationSection = () => {
             </div>
 
             {/* Projects Column (replaces cloned Internships) */}
-            <div className="bg-[var(--portfolio-card)] card-padding lg:px-12 lg:py-14 rounded-2xl">
+            <div className="bg-[var(--portfolio-card)] card-padding lg:px-12 lg:py-14 rounded-3xl">
               <h3 className="text-3xl leading-[1] fade-in-up md:text-2xl text-[var(--portfolio-dark-card)] mb-8">Tools & Technologies</h3>
               {techStack.map((tech, index) => (
                 <div
@@ -124,7 +124,7 @@ const EducationSection = () => {
             </div>
 
             {/* Certifications Column */}
-            <div className="bg-[var(--portfolio-card)] card-padding lg:px-12 lg:py-14 rounded-2xl">
+            <div className="bg-[var(--portfolio-card)] card-padding lg:px-12 lg:py-14 rounded-3xl">
               <h3 className="text-3xl leading-[1] fade-in-up md:text-2xl text-[var(--portfolio-dark-card)] mb-8">Certifications</h3>
               {certifications.map((cert, index) => (
                 <div

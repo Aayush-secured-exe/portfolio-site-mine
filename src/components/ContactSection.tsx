@@ -79,7 +79,7 @@ const ContactSection = () => {
       <div className="w-full">
         <div className="grid md:grid-cols-2 gap-[5px] md:gap-5 items-center">
           {/* Left Column - Heading */}
-          <div className="bg-[var(--portfolio-dark-card)] rounded-2xl h-full card-padding lg:px-12 lg:py-14">
+          <div className="bg-[var(--portfolio-dark-card)] rounded-3xl h-full card-padding lg:px-12 lg:py-14">
             <div className="fade-in-up">
               <div className='text-lg mb-2 text-[var(--portfolio-bg)] leading-tight'>
                 Contact Me
@@ -95,7 +95,7 @@ const ContactSection = () => {
           </div>
 
           {/* Right Column - Form */}
-          <div className="w-full bg-[var(--portfolio-card)] rounded-2xl justify-end">
+          <div className="w-full bg-[var(--portfolio-card)] rounded-3xl justify-end">
             <form onSubmit={handleSubmit} className="fade-in-up p-8 lg:ml-auto lg:max-w-sm lg:pt-14 lg:pr-12 pb-24">
               <div className="space-y-8">
                 <div>

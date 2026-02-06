@@ -14,7 +14,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[var(--portfolio-dark-card)] text-[var(--portfolio-bg)] rounded-t-2xl rounded-b-none my-1 mx-0 mb-0 md:my-4 md:mx-0 md:mb-0 lg:m-4 lg:rounded-2xl">
+    <footer className="bg-[var(--portfolio-dark-card)] text-[var(--portfolio-bg)] rounded-t-3xl rounded-b-none my-1 mx-0 mb-0 md:my-4 md:mx-0 md:mb-0 lg:m-4 lg:rounded-3xl">
       <div className="w-full card-padding lg:px-12 lg:py-14">
         {/* Name */}
         <div>
