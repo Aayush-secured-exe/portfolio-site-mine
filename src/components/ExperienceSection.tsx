@@ -52,35 +52,42 @@ const ExperienceSection = () => {
   const experiences = [
     {
       company: 'Personal Project',
+      role: 'Task Management Web Application',
+      period: 'January 2026',
+      link: 'https://task-manager-by-aayushshaw.onrender.com/', // Add your portfolio link
+      responsibilities: [
+        'Built a full-stack task management application with authentication, real-time task CRUD, priority filtering, and completion tracking using a modern dashboard UI.',
+        'React, Vite, Tailwind CSS, React Router, BCrypt, React Toastify, Node.js, Express, MongoDB, Axios, JWT.',
+      ],
+    },
+    {
+      company: 'Personal Project',
       role: 'Personal Portfolio Website',
-      period: 'Autumn 2025',
+      period: 'October 2025',
       link: 'https://portfolio-site-by-aayush.vercel.app/', // Add your portfolio link
       responsibilities: [
-        'Built a responsive portfolio website using React, Tailwind CSS, and Vite',
-        'Designed a modern UI with animations to showcase projects and skills',
-        'Deployed on Vercel with a custom domain',
+        'Designed and developed a responsive personal portfolio to showcase projects, skills, and achievements with optimized performance and SEO.',
+        'React, Vite, Tailwind CSS, JavaScript, Vercel.',
       ],
     },
     {
       company: 'Personal Project',
       role: 'Blood Donation Portal',
-      period: 'Summer 2025',
+      period: 'August 2025',
       link: 'https://github.com/Aayush-secured-exe/BloodDonationProject', // Add your project link
       responsibilities: [
-        'Developed a donor management system using Java Servlets, JSP, and MySQL',
-        'Implemented secure login/signup with bcrypt and added light/dark theme toggle',
-        'Deployed the project on Railway for live usage',
+        'Built a full-stack blood donation platform supporting donor registration, secure authentication, admin management, and efficient donor matching.',
+        'Java Servlets, MySQL, JDBC, BCrypt, Railway, HTML, CSS, JavaScript.',
       ],
     },
     {
-      company: 'Group Project',
+      company: 'College Project',
       role: 'Attendance System with Face Recognition',
-      period: 'Summer 2025',
+      period: 'July 2025',
       link: 'https://github.com/Aayush-secured-exe/Attendance-System-with-Face-Recognition', // Add your project links
       responsibilities: [
-        'Built a real-time attendance system using Python, OpenCV, and MySQL',
-        'Implemented face recognition for automated student attendance tracking',
-        'Collaborated with team to design a web interface and manage the database',
+        'Developed a real-time face-recognition-based attendance system to automate student attendance with high accuracy and admin analytics',
+        'Python, OpenCV, face_recognition, MySQL, pyttsx3, HTML, CSS, JavaScript, PHP.',
       ],
     },
   ];
@@ -109,7 +116,7 @@ const ExperienceSection = () => {
                           href={exp.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-block text-3xl leading-[1] md:text-xl text-[var(--portfolio-dark-card)] mb-1 cursor-pointer hover:underline decoration-1 font-heading"
+                          className="inline-block text-3xl leading-[1] md:text-xl text-[var(--portfolio-dark-card)] cursor-pointer hover:underline decoration-1 font-heading"
                         >
                           {exp.role}
                         </a>
@@ -117,9 +124,9 @@ const ExperienceSection = () => {
                         <p className="text-[var(--portfolio-dark-card)] font-body text-sm">{exp.company}</p>
                         <p className="text-xs font-body text-[#6c757d] mb-2">{exp.period}</p>
                       </div>
-                      <ul className="space-y-0 list-disc list-outside pl-5 marker:text-[var(--portfolio-dark-card)]">
+                      <ul className="space-y-2 list-disc list-outside pl-5 marker:text-[var(--portfolio-dark-card)]">
                         {exp.responsibilities.map((r, idx) => (
-                          <li key={idx} className="text-sm fade-in-up text-[var(--portfolio-dark-card)] leading-relaxed">
+                          <li key={idx} className="text-sm fade-in-up text-[var(--portfolio-dark-card)] leading-snug">
                             {r}
                           </li>
                         ))}
