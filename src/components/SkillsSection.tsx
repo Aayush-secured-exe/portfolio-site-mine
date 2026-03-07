@@ -12,15 +12,15 @@ const SkillsSection = () => {
     },
     {
       title: 'Backend Technologies',
-      skills: ['JSP', 'PHP', 'Java Servlet']
+      skills: ['Node/Express.js', 'JSP', 'PHP', 'Java Servlet']
     },
     {
       title: 'Databases & Tools',
-      skills: ['JDBC', 'MySQL', 'XAMPP', 'phpMyAdmin']
+      skills: ['JDBC', 'MySQL', 'MongoDB', 'phpMyAdmin']
     },
     {
       title: 'Cloud & DevOps',
-      skills: ['Git', 'Vercel', 'GitHub', 'Railway']
+      skills: ['Render', 'Vercel', 'GitHub', 'Railway']
     },
     {
       title: 'Soft Skills',
