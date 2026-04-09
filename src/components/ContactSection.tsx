@@ -3,9 +3,9 @@ import { Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import emailjs from '@emailjs/browser';
 
-const EMAILJS_SERVICE_ID = "service_gldz9yr";
+const EMAILJS_SERVICE_ID = "service_xgw02od";
 const EMAILJS_TEMPLATE_ID = "template_vusf2rg";
-const EMAILJS_PUBLIC_KEY = "QoENOA3zi3cDHv5Wd";
+const EMAILJS_PUBLIC_KEY = "rtjqY29YIRo4iYE0v";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
