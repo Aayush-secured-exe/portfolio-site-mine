@@ -1,4 +1,4 @@
-import { title } from "process";
+// import { title } from "process";
 
 const SkillsSection = () => {
   const skillCategories = [
