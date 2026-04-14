@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 import { Phone, Mail, MapPin, Linkedin } from "lucide-react";
 import heroImage from "@/assets/hero22.png";
 import { useEffect, useRef, useState } from "react";
@@ -42,9 +42,21 @@ export default function HeroSection() {
 
   const contactInfo = [
     { icon: Phone, label: "98311 76328", href: "tel:+919831176328" },
-    { icon: Mail, label: "aayush@gmail.com", href: "mailto:aayushshaw240@gmail.com" },
-    { icon: MapPin, label: "West Bengal, IN", href: "https://maps.app.goo.gl/3xv8VydBs1suk6Y9A" },
-    { icon: Linkedin, label: "aayushshaw", href: "https://www.linkedin.com/in/aayushshaw/" },
+    {
+      icon: Mail,
+      label: "aayush@gmail.com",
+      href: "mailto:aayushshaw240@gmail.com",
+    },
+    {
+      icon: MapPin,
+      label: "West Bengal, IN",
+      href: "https://maps.app.goo.gl/3xv8VydBs1suk6Y9A",
+    },
+    {
+      icon: Linkedin,
+      label: "aayushshaw",
+      href: "https://www.linkedin.com/in/aayushshaw/",
+    },
   ];
 
   return (
@@ -86,19 +98,22 @@ export default function HeroSection() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-[5px] md:gap-5">
+            <div className="grid sm:grid-cols-2 gap-[5px] md:gap-5">
               {contactInfo.map((item, index) => {
                 const Icon = item.icon;
                 return (
                   <a
                     key={index}
                     href={item.href}
-                    target='_blank'
+                    target="_blank"
                     className="bg-[var(--portfolio-card)] card-padding rounded-3xl flex items-center space-x-2 hover:opacity-80 transition-opacity"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <Icon className="fade-in-up w-4 h-4 text-[var(--portfolio-dark-card)] shrink-0" />
-                    <span className="fade-in-up text-[12px] md:text-xs font-medium text-[var(--portfolio-dark-card)]">
+                    <span
+                      className={`fade-in-up text-[12px] md:text-xs font-medium text-[var(--portfolio-dark-card)] 
+  ${item.label.includes("@") ? "break-words min-w-0" : ""}`}
+                    >
                       {item.label}
                     </span>
                   </a>
