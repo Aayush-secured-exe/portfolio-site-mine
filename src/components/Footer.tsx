@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin, Linkedin, Github, Twitter } from 'lucide-react';
 
 const Footer = () => {
   const contactInfo = [
-    { icon: Phone, text: '+91 82404 11165' },
+    { icon: Phone, text: '+91 98311 76328' },
     { icon: Mail, text: 'aayushshaw240@gmail.com' },
     { icon: MapPin, text: 'Hooghly, West Bengal, IN' },
   ];

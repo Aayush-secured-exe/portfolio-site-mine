@@ -41,7 +41,7 @@ export default function HeroSection() {
   }, []);
 
   const contactInfo = [
-    { icon: Phone, label: "82404 11165", href: "tel:+918240411165" },
+    { icon: Phone, label: "98311 76328", href: "tel:+919831176328" },
     { icon: Mail, label: "aayush@gmail.com", href: "mailto:aayushshaw240@gmail.com" },
     { icon: MapPin, label: "West Bengal, IN", href: "https://maps.app.goo.gl/3xv8VydBs1suk6Y9A" },
     { icon: Linkedin, label: "aayushshaw", href: "https://www.linkedin.com/in/aayushshaw/" },
