@@ -9,7 +9,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Linkedin, href: 'https://www.linkedin.com/in/aayushshaw/', label: 'LinkedIn' },
-    { icon: Github, href: 'https://github.com/Aayush-secured-exe', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/Aayush-Shaw', label: 'GitHub' },
     { icon: Twitter, href: 'https://x.com/ig_aayush_yt', label: 'Twitter' },
   ];
 
